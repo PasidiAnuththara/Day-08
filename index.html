@@ -10,7 +10,7 @@
 
 <body>
 
-     <center>
+    <!-- <center>
         <table>
         <tr>
             <td>
@@ -32,9 +32,9 @@
 
                         <h1 id="lblItem">item Name</h1>
 
-                        <!-- <ol id="olItem">
+                         <ol id="olItem">
 
-                        </ol> -->
+                        </ol> 
                     </div>
                 </div>
             </td>
@@ -57,16 +57,17 @@
 
                     <h1 id="lblCustomer">Customer Name</h1>
 
-                    <!-- <ol id="olCustomer">
+                    <ol id="olCustomer">
 
-                    </ol> -->
+                    </ol> 
                 </div>
             </td>
         </tr>
     </table>
-    </center>
+    </center>   -->
+
         
-    <!-- <h1 class="headline">Customer Management System</h1>
+    <h1 class="headline1"><center>Customer Management System</center></h1>
     
     <input  id="txtId" type="text" placeholder="Customer ID">
     <input id="txtName" type="text" placeholder="Customer Name">
@@ -75,7 +76,6 @@
     <input id="txtSalary" type="text" placeholder="Customer Salary">
 
     <input type="button" value="Add Customer" onclick="addCustomer()">
-
 
     <br>
     <h2>View Customers</h2>
@@ -88,7 +88,32 @@
             <th>Customer Address</th>
             <th>Customer Salary</th>
         </tr>
-    </table> -->
+    </table>
+
+
+
+    <h1 class="headline2"><center>Item Management System</center></h1>
+
+    <input id="itemId" type="text" placeholder="Item ID">
+    <input id="itemName" type="text" placeholder="Item Name">
+    <input id="itemExp" type="text" placeholder="Item Exp">
+    <input id="itemPrice" type="text" placeholder="Item Price">
+    <input id="itemNo" type="text" placeholder="Item Contact">
+
+    <input type="button" value="Add Item" onclick="addItem()">
+
+    <br>
+    <h2>View Item</h2>
+
+    <table border="1" width="100%" id="tblItem">
+        <tr>
+            <th>Item ID</th>
+            <th>Item Name</th>
+            <th>Item EXP</th>
+            <th>Item Price</th>
+            <th>Item Contact</th>
+        </tr>
+    </table>
 
     <script src="app.js"></script>
 
