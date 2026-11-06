@@ -1,42 +1,4 @@
-// const itemName=[];
-
-// function btnClick(){
-//     let nameitem1=document.getElementById("cusId").value;
-//     let nameitem2=document.getElementById("cusName").value;
-
-//     let customer(){
-//         id:;
-//         name: customerName
-//     }
-
-//     itemName.push(nameitem);
-//     loadItem();
-// }
-// function loadItem(){
-//     document.getElementById("olItem").innerHTML="";
-//     for(let iName of itemName){
-//         document.getElementById("olItem").innerHTML+=`<li>${iName}</li>`
-//     }
-// }
-
-
-// const customerName = [];
-
-// function btnClickme(){
-//     let txtName=document.getElementById("textname").value;
-//     customerName.push(txtName);
-//     // console.log(customerName);
-//     loadNames();
-
-// }
-// function loadNames(){
-//     document.getElementById("olCustomer").innerHTML="";
-//     for(let cName of customerName){
-//         document.getElementById("olCustomer").innerHTML+=`<li>${cName}</li>`
-//     }
-// }
-
-////////////////////////////////Customer section/////////////////////////////
+//=============================Customer List===================================//
 
 const customerList = [];
 
@@ -69,7 +31,8 @@ function loadCustomerTable() {
         <th>Age</th>
         <th>Address</th>
         <th>Salary</th>
-    </tr>`
+    </tr>
+    `
 
     for (let customer of customerList) {
 
@@ -85,7 +48,7 @@ function loadCustomerTable() {
     }
     document.getElementById("tblCustomers").innerHTML=body;
 }
-///////////////////////Item list////////////////////////////////
+//=================================Item List===========================================//
 
 const itemList = [];
 
@@ -111,13 +74,15 @@ function addItem() {
 
 function loadItemTable() {
     
-    let body =`<tr>
+    let body =`
+    <tr>
         <th>Item ID</th>
         <th>Item Name</th>
         <th>Item EXP</th>
         <th>Item Price</th>
         <th>Item Contact</th>
-    </tr>`
+    </tr>
+    `
 
     for (let item of itemList) {
 
